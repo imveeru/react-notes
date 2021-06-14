@@ -8,7 +8,7 @@ function Search({handleSearchNote}) {
     return (
         <div className="search">
             <MdSearch
-                className="searc-icon"
+                className="search-icon"
                 size="1.3em"
             />
             <input
