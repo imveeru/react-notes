@@ -27,7 +27,7 @@ function AddNote({handleAddNote}) {
                 placeholder='Add your notes here...'
                 onChange={handleChange}
                 value={noteText}
-
+                autoFocus
             ></textarea>
 
             <div className="note-footer">

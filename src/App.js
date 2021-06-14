@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import {nanoid} from 'nanoid'
 import NotesList from './components/NotesList'
-
+import Search from './components/Search'
 
 function App() {
 
@@ -44,6 +44,7 @@ function App() {
   return (
     <div className="container">
       <h2>Notes</h2>
+      <Search/>
       <NotesList
         notes={notes}
         handleAddNote={addNote}
