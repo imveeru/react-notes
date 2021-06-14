@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 
+
+
 function AddNote({handleAddNote}) {
 
     const [noteText,setNoteText]=useState('')
@@ -16,6 +18,9 @@ function AddNote({handleAddNote}) {
         if(noteText.trim().length>0){
             handleAddNote(noteText)
             setNoteText('')
+        }else{
+            //Warning for empty note.
+            alert('Type something in note!(Empty)')
         }
     }
 
@@ -24,7 +29,7 @@ function AddNote({handleAddNote}) {
             <textarea
                 rows='8'
                 cols='10'
-                placeholder='Add your notes here...'
+                placeholder='Type your notes here...'
                 onChange={handleChange}
                 value={noteText}
                 autoFocus

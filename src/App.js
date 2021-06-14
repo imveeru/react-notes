@@ -67,6 +67,7 @@ function App() {
           handleAddNote={addNote}
           handleDeleteNote={deleteNote}
         />
+        {notes.length<=0?<h2 className="empty-msg">Add your notes...</h2>:null}
       </div>
     </div>
   )

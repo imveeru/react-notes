@@ -121,6 +121,13 @@ textarea:focus{
   cursor: pointer;
 }
 
+.empty-msg{
+  display:flex;
+  justify-content:center;
+  opacity: .2;
+  font-size:2rem;
+}
+
 .dark-mode{
   background-color:#212121;
 }
@@ -155,4 +162,9 @@ textarea:focus{
 
 .dark-mode .sun-icon{
   color:white;
+}
+
+.dark-mode .empty-msg{
+  color:#5a5a5a;
+  opacity: 1;
 }
