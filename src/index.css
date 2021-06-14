@@ -46,6 +46,7 @@ textarea:focus{
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  white-space: pre-wrap; /*to have new lines*/
 }
 
 .note-footer{
