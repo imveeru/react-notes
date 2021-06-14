@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import {nanoid} from 'nanoid'
 import NotesList from './components/NotesList'
 
+
 function App() {
 
   const [notes, setNotes] = useState([
