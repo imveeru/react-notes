@@ -130,6 +130,7 @@ textarea:focus{
 
 .dark-mode{
   background-color:#212121;
+  background-repeat: repeat;
 }
 
 .dark-mode h1{
