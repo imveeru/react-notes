@@ -6,23 +6,8 @@ import Header from './components/Header'
 
 function App() {
 
-  const [notes, setNotes] = useState([
-    {
-      id:nanoid(),
-      text:"1 Note!",
-      date:"14/06/2021"
-    },
-    {
-      id:nanoid(),
-      text:"2 Note!",
-      date:"15/06/2021"
-    },
-    {
-      id:nanoid(),
-      text:"3 Note!",
-      date:"16/06/2021"
-    }
-  ])
+  //Notes Data
+  const [notes, setNotes] = useState([])
   
   //Searching
   const [searchText,setSearchText]=useState('')
@@ -73,7 +58,7 @@ function App() {
   return (
     <div className={darkMode?'dark-mode':null}>
       <div className="container">
-        <Header handleDarkMode={setDarkMode}/>
+        <Header darkMode={darkMode} handleDarkMode={setDarkMode}/>
         <Search handleSearchNote={setSearchText}/>
         <NotesList
           notes={notes.filter((note)=>
