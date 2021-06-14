@@ -24,6 +24,19 @@ code {
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 
+.note.new{
+  background-color:#d4ffd4
+}
+
+textarea{
+  border:none;
+  resize:none;
+  background:none;
+}
+
+textarea:focus{
+  outline: none;
+}
 
 .note{
   background-color:#fffbd4;
@@ -41,3 +54,17 @@ code {
   justify-content:space-between;
 }
 
+.save-btn{
+  font-size: 1rem;
+  background-color: #fbfbfb;
+  border:none;
+  border-radius:1rem;
+  padding: .6rem .8rem;
+  box-shadow:  4px 4px 6px #bae0ba,
+             -4px -4px 8px #ebffeb;
+}
+
+.save-btn:hover{
+  cursor: pointer;
+  background-color:#fff;
+}
