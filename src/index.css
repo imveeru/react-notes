@@ -23,7 +23,9 @@ small{
   max-width:82.5%;
   margin-right: auto;
   margin-left: auto;
-  height:100vh;
+  min-height: 100vh;
+  max-height: auto;
+  padding-bottom: 1.25rem;
 }
 
 .notes-list{
@@ -126,6 +128,8 @@ textarea:focus{
   justify-content:center;
   opacity: .2;
   font-size:2rem;
+  margin:0;
+  padding: 20px 0px;
 }
 
 .dark-mode{
