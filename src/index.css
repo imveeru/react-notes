@@ -96,6 +96,7 @@ textarea:focus{
 
 .search-icon{
   opacity: .75;
+  margin-right: 5px;
 }
 
 .search-input{
